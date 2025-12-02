@@ -1,0 +1,71 @@
+; This is the Calva REPL Window.
+; It's just a file, really, with some special treatment from Calva.
+; Use it as a REPL input prompt if you like. (When the REPL is connected.)
+; TIPS: The keyboard shortcut `ctrl+alt+o r` shows and focuses this window
+; Please see https://calva.io/repl-window/ for more info.
+; Happy coding! ♥️
+
+; TIPS: As with any Clojure file when the REPL is connected:
+; - `alt+enter` evaluates the current top level form.
+; - `ctrl+enter` evaluates the current form.
+; Special for this file:
+; - `alt+up` and `alt+down` traverse up and down the REPL command history
+;    when the cursor is after the last contents at the prompt
+;
+; See also the Calva Inspector: https://calva.io/inspector/
+
+PLEASE NOTE
+We will update the default location of this file.
+The new default location will be
+  "<projectRootPath>/.calva/repl.calva-repl"
+For now the legacy path is used by default.
+To give yourself a smooth transition, you can opt in
+to the change, by configuring this setting as false:
+  "calva.useLegacyReplWindowPath"
+and then add "**/.calva/repl.calva-repl" to your ".gitignore" file.
+
+
+This file is configured as the output destination for all REPL output.
+You can configure this with the setting:
+  "calva.outputDestinations"
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+;
+; Starting Jack-in: (cd /home/kseniabusquet/repositorios/advent-1; lein update-in :dependencies conj '[nrepl,"1.5.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.58.0"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless)
+; Using host:port 127.0.0.1:39261 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉advent-1.core꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉advent-1.core꞉> 
+; Jack-in done.
+clj꞉advent-1.core꞉> 
+(subs "L79" 1)
+"L"
+clj꞉advent-1.core꞉> 
+"79"
+clj꞉advent-1.core꞉> 
+((case "L"
+               "L" -
+               "R" +) 2 2)
+0
+clj꞉advent-1.core꞉> 
+(rem -18 100)
+-18
+clj꞉advent-1.core꞉> 
+(rem 199 -18)
+1
+clj꞉advent-1.core꞉> 
+(rem 100 -18)
+10
+clj꞉advent-1.core꞉> 
+(* 0.01 -18)
+; Execution error (ClassCastException) at advent-1.core/eval10543 (output.calva-repl:66).
+; class java.lang.Double cannot be cast to class clojure.lang.IFn (java.lang.Double is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉advent-1.core꞉> 
+-0.18
+clj꞉advent-1.core꞉> 
