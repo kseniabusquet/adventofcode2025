@@ -1,7 +1,3 @@
-Advent of Code[About][Events][Shop][Settings][Log Out]Ksenia Busquet 2*
- {'year':2025}[Calendar][AoC++][Sponsors][Leaderboards][Stats]
-Our sponsors help make Advent of Code possible:
-Infi - Kun jij de bomen door het bos z13n!? Puzzel verder en help boswachter Brian zijn bos in leven te houden in het donker van de Noordpool.
 --- Day 1: Secret Entrance ---
 The Elves have good news and bad news.
 
@@ -43,6 +39,7 @@ L1
 L99
 R14
 L82
+
 Following these rotations would cause the dial to move as follows:
 
 The dial starts by pointing at 50.
@@ -91,11 +88,3 @@ Be careful: if the dial were pointing at 50, a single rotation like R1000 would 
 Using password method 0x434C49434B, what is the password to open the door?
 
 Your puzzle answer was 6638.
-
-Both parts of this puzzle are complete! They provide two gold stars: **
-
-At this point, you should return to your Advent calendar and try another puzzle.
-
-If you still want to see it, you can get your puzzle input.
-
-You can also [Share] this puzzle.
